@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search String</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+    }
+    .search{
+        border: 2px groove blue;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    input{
+        padding: 10px 15px;
+        outline: none;
+        width: 500px;
+        border-radius: 10px;
+        position: relative;
+    }
+    p{
+        text-align: center;
+    }
+    h2{
+        margin-top: 30px;
+        text-align: center;
+    }
+    button{
+        padding: 10px 15px;
+        background: blue;
+        color: #fff;
+        border-radius: 10px;
+        width: 85%;
+        border: none;
+        margin-top: 30px;
+    }
+    h3{
+        padding: 20px;
+        border-radius: 10px;
+        background: rgb(132, 9, 9);
+        color: #fff;
+        margin-left: -5rem;
+        display: none;
+    }
+    #search2{
+        width: 200px;
+    }
+    #btn2{
+        width: 200px;
+        background: red;
+    }
+    #btn2:hover{
+        width: 200px;
+        background: rgb(135, 32, 32);
+        transition: 0.5s;
+    }
+    
+    span{
+        color: red;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    button:hover{
+background-color: fuchsia;
+transition: 0.5s;
+    }
+    @media (max-width:600px){
+        .search{
+            max-width: 500px;
+        }
+        input{
+            width: 80%;
+        }
+    }
+    @media (max-width:400px){
+        .search{
+            max-width: 300px;
+        }
+        input{
+            width: 75%;
+            
+        }
+    }
+</style>
+<body>
+
+    <h3>fadlan 3 daada Magac ku qor</h3>
+<div class="search">
+<input type="text" id="search" placeholder="Search String below Position">
+<button id="btn" type="submit">Add Title</button>
+<h2 id="title">You Name</h2>
+<input type="text" id="search2" placeholder="Searching Position String ">
+<button id="btn2" type="submit">Search</button>
+<p id="PositionSearch">The Searching Position is: <span></span> </p>
+
+</div>
+
+
+  <script src="./search.js"></script>  
+</body>
+</html>
